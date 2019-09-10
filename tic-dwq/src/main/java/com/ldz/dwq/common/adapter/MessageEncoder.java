@@ -3,7 +3,7 @@ package com.ldz.dwq.common.adapter;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import com.ldz.dwq.common.bean.MessageBean;
 import com.ldz.dwq.handler.ServerChannelHandler;
