@@ -1,6 +1,6 @@
 package com.ldz.util.commonUtil;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 
 import java.time.LocalDateTime;
@@ -98,14 +98,14 @@ public class DateUtils {
 		return localDateTime.format(dateTimeFormatter);
 	}
 
-	public static void main(String[] args) throws ParseException {
+	/*public static void main(String[] args) throws ParseException {
 
 		Date date = DateUtils.getDate("2018-11-23", "yyyy-MM-dd");
 		LocalDateTime dateTime = LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault());
 		String s = plusYear(dateTime, 1);
 		System.out.println(s);
 
-	}
+	}*/
 
 
 

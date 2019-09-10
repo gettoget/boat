@@ -2,19 +2,15 @@ package com.ldz.dwq.handler;
 
 import java.util.concurrent.TimeUnit;
 
+import com.ldz.dwq.common.adapter.JSONDecoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.ldz.dwq.common.adapter.MessageDecoder;
 import com.ldz.dwq.common.adapter.MessageEncoder;
-import com.ldz.dwq.common.bean.MessageBean;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
-import io.netty.handler.codec.DelimiterBasedFrameDecoder;
 import io.netty.handler.timeout.ReadTimeoutHandler;
 
 @Component
@@ -40,11 +36,12 @@ public class ServerChannelInitializer extends ChannelInitializer<SocketChannel> 
 	protected void initChannel(SocketChannel socketChannel) throws Exception {
 		ChannelPipeline pipeline = socketChannel.pipeline();
         //帧尾固定加BB，通过识别，自动进行数据分隔处理，解决TCP粘包
-		ByteBuf charsetBuf = Unpooled.copiedBuffer(MessageBean.end.getBytes());
-
-		pipeline.addLast(new DelimiterBasedFrameDecoder(MAX_FRAME_LENGTH, charsetBuf));
+//		ByteBuf charsetBuf = Unpooled.copiedBuffer(MessageBean.end.getBytes());
+//
+//		pipeline.addLast(new DelimiterBasedFrameDecoder(MAX_FRAME_LENGTH, charsetBuf));
 		//解包转换类
-        pipeline.addLast("decoder", new MessageDecoder(MAX_FRAME_LENGTH, LENGTH_FIELD_OFFSET, LENGTH_FIELD_LENGTH, LENGTH_ADJUSTMENT, INITIAL_BYTES_TO_STRIP, false));
+//        pipeline.addLast("decoder", new MessageDecoder(Charset.forName("GBK")));
+		pipeline.addLast("decoder", new JSONDecoder());
         //封包转换类
         pipeline.addLast("encoder", new MessageEncoder());
         //设置心跳检测。单位为分钟

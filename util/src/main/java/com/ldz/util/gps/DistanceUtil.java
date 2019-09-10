@@ -88,7 +88,7 @@ public class DistanceUtil {
 		return distance;
 	}
 	
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		double mLat1 = 31.24081800000000; 	// point1纬度
 		double mLng1 = 121.46541700000000; 	// point1经度
 		double mLat2 = 31.239946;	// point2纬度
@@ -99,6 +99,6 @@ public class DistanceUtil {
 		
 		double distanceByLong = getLongDistance(mLng1, mLat1, mLng2, mLat2);
 		System.out.println(distanceByLong);
-	}
+	}*/
 
 }

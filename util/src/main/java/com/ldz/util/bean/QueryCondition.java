@@ -1,6 +1,6 @@
 package com.ldz.util.bean;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author chenwei

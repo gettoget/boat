@@ -57,7 +57,7 @@ public class LatLonUtil {
        s = Math.round(s * 10000) / 10000;
        return s;
     }
-    
+/*
 	public static void main(String[] args){
 		Double lat1 = 34.264648;
 		Double lon1 = 108.952736;
@@ -69,5 +69,5 @@ public class LatLonUtil {
 		//911717.0   34.264648,108.952736,39.904549,116.407288
 		double dis = getDistance(108.952736,34.264648,116.407288,39.904549); 
 		System.out.println(dis);
-	}
+	}*/
 }

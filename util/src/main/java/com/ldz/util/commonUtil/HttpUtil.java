@@ -255,7 +255,7 @@ public static String postExtral(String url, Map<String, String> params,List<Obje
 		return "";
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		System.out.println(HttpUtil.get("http://www.transgen.com.cn/products/57.html" ));
-	}
+	}*/
 }

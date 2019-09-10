@@ -1,7 +1,7 @@
 package com.ldz.util.mapperprovider;
 
 import com.ldz.util.commonUtil.JdbcType2JavaType;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.mapping.MappedStatement;
 import tk.mybatis.mapper.entity.EntityColumn;
 import tk.mybatis.mapper.mapperhelper.EntityHelper;

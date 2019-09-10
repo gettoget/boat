@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -223,10 +223,10 @@ public class GuiJIApi {
 
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         String s = HttpUtil.get("http://api.map.baidu.com/geocoder/v2/?ak=2pVOrCuBldNDOgDtwaYSP8gpQ2VQdZY9");
         System.out.println(s);
-    }
+    }*/
 
     // 来自stackoverflow的MD5计算方法，调用了MessageDigest库函数，并把byte数组结果转换成16进制
     public String MD5(String md5) {

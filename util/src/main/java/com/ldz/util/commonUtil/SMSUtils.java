@@ -80,8 +80,8 @@ public class SMSUtils {
         }
         return false;
     }
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
 //        sendSMS("123");
         System.out.println("123");
-    }
+    }*/
 }

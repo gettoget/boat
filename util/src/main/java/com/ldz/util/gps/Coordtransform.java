@@ -122,7 +122,7 @@ public class Coordtransform {
         return (lng < 72.004 || lng > 137.8347) || ((lat < 0.8293 || lat > 55.8271) || false);
     };
     
-    public static void main(String[] args){
+   /* public static void main(String[] args){
     	String[] datas = new String[]{
     			"532614605571096576,865923030038951,2019-01-09 17:40:16.000000,114.3526583333,30.5383883333",
     			"532614627402448896,865923030038951,2019-01-09 17:40:21.000000,114.3526583333,30.5383883333",
@@ -516,8 +516,8 @@ public class Coordtransform {
     	for (int i=0; i<datas.length; i++){
     		String data = datas[i];
     		String[] arrs = data.split(",");
-    		/*Double[] gcj02 = Coordtransform.WGS84ToGCJ02(new Double(arrs[3]), new Double(arrs[4]));
-    		Double[] bd09 = Coordtransform.GCJ02ToBD09(new Double(gcj02[0]), new Double(gcj02[1]));*/
+    		*//*Double[] gcj02 = Coordtransform.WGS84ToGCJ02(new Double(arrs[3]), new Double(arrs[4]));
+    		Double[] bd09 = Coordtransform.GCJ02ToBD09(new Double(gcj02[0]), new Double(gcj02[1]));*//*
     		//System.out.println(arrs[2]+"="+bd09[1]+","+bd09[0]+"["+arrs[4]+","+arrs[3]+"]");
     		//System.out.println(arrs[0]+","+arrs[1]+","+arrs[2]+","+arrs[3]+","+bd09[1]+","+bd09[0]);
     		//System.out.println("update cl_gps_ls set bdjd="+bd09[0]+",bdwd="+bd09[1]+" where id="+arrs[0]+";");
@@ -525,6 +525,6 @@ public class Coordtransform {
     		Gps bd09 = PositionUtil.gcj02_To_Bd09(gcj02.getWgLat(), gcj02.getWgLon());
     		System.out.println(arrs[2]+"="+bd09.getWgLat()+","+bd09.getWgLon()+"["+arrs[4]+","+arrs[3]+"]");
     	}
-    }
+    }*/
 	
 }

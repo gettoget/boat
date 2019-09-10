@@ -5,7 +5,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import com.ldz.dwq.common.tools.SpringContextUtil;
 import com.ldz.dwq.handler.biz.*;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
