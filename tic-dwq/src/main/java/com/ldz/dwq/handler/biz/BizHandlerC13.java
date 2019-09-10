@@ -1,7 +1,7 @@
 package com.ldz.dwq.handler.biz;
 
 import com.ldz.dao.dwq.model.GpsBean;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.joda.time.format.DateTimeFormat;

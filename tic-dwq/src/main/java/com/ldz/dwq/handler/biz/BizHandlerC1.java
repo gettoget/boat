@@ -3,9 +3,7 @@ package com.ldz.dwq.handler.biz;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.springframework.stereotype.Component;
-
 import com.ldz.dwq.common.bean.MessageBean;
-
 import io.netty.channel.ChannelHandlerContext;
 
 /**

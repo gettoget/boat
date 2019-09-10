@@ -3,7 +3,7 @@ package com.ldz.dwq.handler.biz;
 import java.util.concurrent.TimeUnit;
 
 import com.ldz.util.redis.RedisTemplateUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

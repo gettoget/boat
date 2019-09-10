@@ -9,7 +9,7 @@ import com.ldz.util.bean.RequestCommonParamsDto;
 import com.ldz.util.redis.RedisTemplateUtil;
 import io.netty.channel.ChannelHandlerContext;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.joda.time.format.DateTimeFormat;
